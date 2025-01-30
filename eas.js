@@ -9,8 +9,18 @@ function createGrid(size) {
             const newDiv = document.createElement("div");
             newDiv.classList.add("square");
             newRow.appendChild(newDiv);
+
+            newDiv.addEventListener("mouseover", () => {
+                newDiv.classList.add("squareHover");
+            })
         }
     }
 }
+
+newGridButton = document.querySelector("#newGridButton");
+newGridButton.addEventListener("click", () => {
+    size = Number(prompt("Size of grid?"))
+    createGrid(size);
+});
 
 createGrid(16);
