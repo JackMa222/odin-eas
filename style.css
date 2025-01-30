@@ -1,0 +1,17 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    height: 98vh;
+}
+
+.row {
+    display: flex;
+    gap: 1px;
+    flex-grow: 1;
+}
+
+.square {
+    flex-grow: 1;
+    background-color: blue;
+}
